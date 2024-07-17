@@ -31,11 +31,12 @@ GlobalQueue = 1024
 	MaxConns = 200
 
 [Etherman]
-URL = "http://your.L1node.url"
-ForkIDChunkSize = 20000
+URL = "http://94.130.79.227:32773" # external port of el-1-geth-lighthouse service
+ForkIDChunkSize = 9999 # Copied from configured container
 MultiGasProvider = false
-	[Etherman.Etherscan]
-		ApiKey = ""
+
+[Etherman.Etherscan]
+	ApiKey = ""
 
 [RPC]
 Host = "0.0.0.0"
